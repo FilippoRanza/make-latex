@@ -26,7 +26,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build latex
-        uses: FilippoRanza/make-latex
+        uses: FilippoRanza/make-latex@v0.1.0
         with:
           # the compiled document file name is required: without it 
           # the action cannot know which file to upload
