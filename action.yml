@@ -1,0 +1,16 @@
+name: 'make-latex'
+description: 'Build a latex document using make'
+inputs:
+  file-name:
+    description: 'compiled document name'
+    required: true
+  discord-webhook:
+    description: 'Upload compiled'
+    required: false
+    default: null
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.file-name  }}
+    - ${{ inputs.discord-webhook }}
