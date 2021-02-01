@@ -2,6 +2,11 @@
 
 echo "Compile: $1"
 
+if [[ -e 'requirements.txt' ]] ; then
+    pip install -r requirements.txt
+fi 
+
+
 make
 
 if [[ "$2" ]] ; then
