@@ -6,7 +6,7 @@ A GH action to compile and upload a latex document
 This action let you compile a latex document and upload the 
 compiled file on discord, using a webhook. 
 
-In order to compile the document you nedd to write a Makefile that 
+In order to compile the document you need to write a Makefile that 
 will be used by the action to compile the document. At the current
 time this is the only way to compile the document.
 
@@ -33,7 +33,7 @@ This software are available:
 
 ## Usage
 
-Creata a YAML file in ```.github/workflows```.
+Create a YAML file in ```.github/workflows```.
 Here an example
 
 ```yaml
