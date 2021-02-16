@@ -1,10 +1,14 @@
 #! /bin/bash
+set -e
+
 
 echo "Compile: $1"
 
 if [[ -e 'requirements.txt' ]] ; then
     pip install -r requirements.txt
 fi 
+
+[[ -e ~/.gitconfig ]] && rm ~/.gitconfig
 
 
 make
