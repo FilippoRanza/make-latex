@@ -9,11 +9,6 @@ if [[ -e 'requirements.txt' ]] ; then
 fi 
 
 
-# in order to compile Rust code
-sudo mkdir --parents '/github/home/.cargo/registry/index/'
-sudo chmod 777 '/github/home/.cargo/registry/index/'
-
-
 make
 
 if [[ "$2" ]] ; then
