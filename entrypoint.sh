@@ -11,7 +11,7 @@ fi
 
 # in order to compile Rust code
 mkdir '/github/home/.cargo/registry/index/'
-chmod +x '/github/home/.cargo/registry/index/'
+chmod 777 '/github/home/.cargo/registry/index/'
 
 
 make
