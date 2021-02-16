@@ -8,7 +8,10 @@ if [[ -e 'requirements.txt' ]] ; then
     pip install -r requirements.txt
 fi 
 
-[[ -e ~/.gitconfig ]] && rm ~/.gitconfig
+
+# in order to compile Rust code
+mkdir '/github/home/.cargo/registry/index/'
+chmod +x '/github/home/.cargo/registry/index/'
 
 
 make
