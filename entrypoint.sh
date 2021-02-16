@@ -9,7 +9,7 @@ if [[ -e 'requirements.txt' ]] ; then
 fi 
 
 
-sudo make
+make
 
 if [[ "$2" ]] ; then
     curl -X POST -H 'Content-Type: multipart/form-data' -F "files[]=@$1" "$2"
