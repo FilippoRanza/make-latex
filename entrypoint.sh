@@ -3,6 +3,7 @@ set -e
 
 
 echo "Compile: $1"
+echo "$USER"
 
 if [[ -e 'requirements.txt' ]] ; then
     pip install -r requirements.txt
