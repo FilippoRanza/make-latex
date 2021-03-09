@@ -1,14 +1,16 @@
 #! /bin/bash
 set -e
 
+PATH=$PATH:/usr/bin/vendor_perl
+export PATH
+
+cp /.latexmkrc . 
 
 echo "Compile: $1"
 
 if [[ -e 'requirements.txt' ]] ; then
     pip install -r requirements.txt
 fi 
-
-cp /.latexmkrc . 
 
 make
 
